@@ -1,0 +1,100 @@
+{% extends 'base.html'%}
+{% block styles%} {{ super() }}
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+ {% endblock %}
+
+{% block content %}
+
+<body>
+  <div class="container" style="width: 100%; height: 100%;">
+    <div class="row"> 
+        <br>
+        <div class="col-md-12">
+            <img src="/static/images/pitch.png" class="center">
+        </div>
+        <br>
+        <br>
+        <div class="col-md-12">
+        <p style="font-size: 20px; float:left; color: gray;" > <strong> In life you only have 60 seconds to impress someone. 
+        One minute to make or break you. How do we make sure that you use your one minute to actually say something meaningful ? </strong> </p>
+        </div> 
+    </div>
+  
+  <br>
+  <div class="d-flex justify-content-center">
+    <div class="card-groups">
+      <div class="card border-info mb-5" style="width: 70rem;height: 20rem;background-color: transparent;">
+        <div class="card-header">Technology</div>
+        <div class="card-body text-info">
+          <br>
+          <br>
+          <h5 class="card-title" style="color: darkgray;">Lets pitch about technology</h5>
+          <p class="card-text">Add Technology pitches on best the way technology can be bring people together.</p>
+          <button type="button" class="btn btn-outline-success"><a href="{{url_for('main.new_pitch')}}">Add Pitch</a></button>
+          <button type="button" class="btn btn-outline-success"><a href="/categories/Technology">Read Pitches</a></button>
+        </div>
+      </div>
+
+      <div class="card border-info mb-5" style="width: 70rem;height: 20rem;background-color: transparent;">
+        <div class="card-header">Coding</div>
+        <div class="card-body text-info">
+          <br>
+          <br>
+          <h5 class="card-title">Coding pitches</h5>
+          <p class="card-text">Talk is cheap.Show me the code.Add more coding pitches here.</p>
+          <button type="button" class="btn btn-outline-success"><a href="{{url_for('main.new_pitch')}}">Add Pitch</a></button>
+          <button type="button" class="btn btn-outline-success"><a href="/categories/coding">Read Pitches</a></button>
+        </div>
+      </div>
+
+      <div class="card border-info mb-5" style="width: 70rem;height: 20rem;background-color: transparent;">
+        <div class="card-header">Love</div>
+        <div class="card-body text-info">
+          <br>
+          <br>
+          <h5 class="card-title">Put down love Pitches here.</h5>
+          <p class="card-text">Love recognizes no barries. Add more exicting pitches</p>
+          <button type="button" class="btn btn-outline-success"><a href="{{url_for('main.new_pitch')}}">Add Pitch</a></button>
+          <button type="button" class="btn btn-outline-success"><a href="/categories/love">Read Pitches</a></button>
+        </div>
+      </div>
+
+      <div class="card border-info mb-5" style="width: 70rem;height: 20rem; background-color: transparent;">
+        <div class="card-header">Happiness</div>
+        <div class="card-body text-info">
+          <br>
+          <br>
+          <h5 class="card-title">Happiness pitches</h5>
+          <p class="card-text">Happiness is a direction,not a place.Add more happiness pitches.</p>
+          <button type="button" class="btn btn-outline-success"><a href="{{url_for('main.new_pitch')}}">Add Pitch</a></button>
+          <button type="button" class="btn btn-outline-success"><a href="/categories/Happiness">Read Pitches</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .card-text{
+    color: darkkhaki;
+    font-size: medium;
+    text-align: center;
+  }
+  .container{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  .card-header{
+    color: cadetblue;
+    font-size: large;
+    text-align: center;
+  }
+  .p{
+    color: thistle;
+  }  
+  
+</style>
+
+  {% endblock%}
+</body>
