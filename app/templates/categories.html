@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf%}
+{% block super %}{{ super ()}}
+<link rel="stylesheet" href="{{url_for('static',filename='css/categories.css')}}"> {% endblock %}
+<br>
+<br>
+<br>
+<br>
+
+<body>
+    {% block content %}
+    <br>
+    <br>
+    
+  <div class="container">
+    <div class="card-columns">
+      {% for pitch in pitches %}
+
+      <div class="card bg-transparent border-success">
+        <div class="card-header bg-transparent border-success">
+  
+        </div>
+        <div class="card-body text">
+          <blockquote class="blockquote mb-0">
+            <p>{{pitch.pitch}}</p><br>
+            <footer class="blockquote-footer bg-transparent border-success">{{pitch.user.username}}
+              
+          </blockquote>
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          {{wtf.quick_form(comment_form)}}
+          <br>
+
+          <button type="button" class="btn btn-outline-success btn-sm"><button type="button" class="btn btn-outline-success btn-sm"><a href="/all_comment/{{pitch.id}}">View comments</a></button></div>
+      </div><br><br><br>
+
+      {% endfor %}
+      
+    </div>
+    {% endblock %}
+</body>
