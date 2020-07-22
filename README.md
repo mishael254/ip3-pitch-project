@@ -1,26 +1,54 @@
-PITCHES
-An application that gives opportunity to render differemt types of pitches., {2020}
+### **PITCHES**
 
-Description
-The application gives you only your 60 seconds use to render pitches in different categories that you wish.
+****
+#### Authors:() [Mishael Ndegwa](https://github.com/mishael254)
 
-Setup/Installation Requirements
-Set your virtual environment eg $pip python3 -m venv virtual dont forget to activate it before the next step. You can do this by $source activate virtual/bin/activate
+#### **Description**
+an application that allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
 
-Install the flask extension eg $pip install flask
+#### Getting Started
+- Clone this repo and ```cd``` into the folder
+```sh 
+$ git clone https://github.com/mishael254/news-app
 
-Finally run your application on the terminal using the command $python3.8 manage.py server
+$ source virtual/bin/activate
 
-Known Bugs
-No known bugs yet but if any you can reach out millerfaabi.com
+(virtual)$ pip install -r requirements.txt
 
-Technologies Used
-PYTHON HTML CSS FLASK HEROKU POSTGRES
+(virtual)$ python3 run.py server
+```
+- To run unit tests; ``` (virtual)$ python3 run.py test```
 
-License
-MIT License
+#### **User Story**
+a user cansee the pitches other people have posted.
+a user can vote on the pitch they liked and give it a downvote or upvote.
+a user can be signed in for me to leave a comment
+a user can receive a welcoming email once I sign up.
+a user can view the pitches he/she have created in their profile page.
+a user can comment on the different pitches and leave feedback.
+user can submit a pitch in any category.
+ a user can view the different categories.
 
-Copyright (c) [2020] [Andrew Kalume Yaah]
+#### **Technologies used**
+1. Flask
+2. HTML5
+3. Bootstrap4
+4. Database
+5. email-services
+
+#### **Contact**
+
+>Mishael Ndegwa - mishaelndegwa@gmail.com
+
+#### **Copyright & License**
+Distributed under the MIT License. See LICENSE for more information on license and copyright. 
+
+
+#####  ** MIT LICENCE
+
+The MIT License (MIT)
+
+Copyright © 2020 Mishael ndegwa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
