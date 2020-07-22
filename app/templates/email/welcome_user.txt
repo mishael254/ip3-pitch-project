@@ -1,0 +1,7 @@
+Hello {{user.author}},
+
+Welcome to Pitch It Up!
+
+Thank you for for signing up for the pitches community ,feel free to leave a comment about other people's pitches.
+
+Thanks.
