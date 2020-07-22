@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: blanchedalmond;">
+    <a class="navbar-brand" href="/">Lets start pitching.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+        {% if current_user.is_authenticated %}
+
+        <li style="color:white;padding:15px;">{{current_user.username}}</li>
+        
+        <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
+        {% else %}
+        <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
+        {%endif%}
+      </ul>
+   
+      
+  </nav>
