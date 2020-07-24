@@ -36,6 +36,8 @@ user can submit a pitch in any category.
 4. Database
 5. email-services
 
+#### link to the live site:   https://mishaelippitch.herokuapp.com/
+
 #### **Contact**
 
 >Mishael Ndegwa - mishaelndegwa@gmail.com
